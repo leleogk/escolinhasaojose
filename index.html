@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escolinha de Futebol São José - Lagoa Nova</title>
-    <!-- Carregamento do Tailwind CSS para estilização moderna e responsiva -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carregamento do Tailwind CSS para estilização moderna e responsiva --><script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc; /* slate-50 */
         }
+        
+        /* ESTILO DO CABEÇALHO COM A IMAGEM DE FUNDO DO JOGADOR */
         .hero-bg {
-            background-color: #0d9488; /* Teal 600 - Um verde/azul forte */
-            background-image: linear-gradient(135deg, #0d9488 0%, #1d4ed8 100%); /* Transição de cor */
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Filtro escuro para legibilidade */
+                /* IMAGEM DE FUNDO: detalhe do jogador de futebol */
+                url('https://imgs.search.brave.com/RXa0Phm_fx0DiISqXc4biFgnOG4fvCj7Vhi8UR9W0Y8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDY3/Mzc2MzQyL3B0L2Zv/dG8vZGV0YWxoZS1q/b2dhZG9yLWRlLWZ1/dGVib2wuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUp6Q0hH/UzdFeEQ0ck0ySUhp/NEFaNzVZb1VXcmZH/aWZPM3RmQ1BpeGsz/ZW89');
+            
+            background-size: cover;
+            background-position: center;
+            background-color: #0d9488; /* Cor de segurança */
         }
+
         .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
         }
     </style>
 </head>
 <body>
 
-    <!-- Cabeçalho / Seção Hero -->
-    <header class="hero-bg text-white shadow-xl">
+    <!-- Cabeçalho / Seção Hero --><header class="hero-bg text-white shadow-xl">
         <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center rounded-b-lg">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-3 text-shadow">
                 Escolinha de Futebol São José
@@ -33,13 +40,11 @@
                 Onde os sonhos de Lagoa Nova viram realidade no campo!
             </p>
             
-            <!-- Botões de Ação: Planos e Instagram -->
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- Botões de Ação: Planos e Instagram --><div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#precos" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                     Ver Planos e Inscrever
                 </a>
-                <!-- Botão Instagram com ícone SVG -->
-                <a href="https://www.instagram.com/prof.lourivall/" target="_blank" class="inline-flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                <!-- Botão Instagram com ícone SVG --><a href="https://www.instagram.com/prof.lourivall/" target="_blank" class="inline-flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                     Nosso Instagram
                 </a>
@@ -47,35 +52,50 @@
         </div>
     </header>
 
-    <!-- Seção Sobre, Localização e Horários -->
-    <section id="sobre" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <!-- Seção Sobre, Localização e Horários --><section id="sobre" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">
             Venha Treinar Conosco
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div class="space-y-4">
-                <p class="text-lg text-gray-700">
-                    A Escolinha de Futebol São José está comprometida em desenvolver jovens talentos com disciplina, respeito e paixão pelo esporte. Nosso foco é no aprimoramento técnico e tático, garantindo que cada aluno alcance seu potencial máximo.
+                <!-- TEXTO ALTERADO AQUI --><p class="text-lg text-gray-700">
+                    A Escolinha de Futebol São José está comprometida em ensinamentos dos fundamentos do futebol de iniciantes, respeito e paixão pelo esporte. Nosso foco é no aprimoramento da resistencia, coordenação e disciplina, garantindo que cada aluno alcance seu potencial máximo!
                 </p>
-                <!-- INFORMAÇÃO DE IDADE ADICIONADA -->
-                <p class="text-lg text-gray-800 font-bold border-l-4 border-teal-500 pl-3 py-1 bg-teal-50/50 rounded">
-                    Recebemos atletas de <span class="text-teal-600">5 a 13 anos</span>. Acima desta idade, avaliamos o grau de aprendizado e desenvolvimento do atleta.
+                <!-- FIM TEXTO ALTERADO -->
+                
+                <!-- INFORMAÇÃO DE IDADE E GÊNERO ATUALIZADA --><p class="text-lg text-gray-800 font-bold border-l-4 border-teal-500 pl-3 py-1 bg-teal-50/50 rounded">
+                    Recebemos atletas <span class="text-teal-600">iniciantes</span> de <span class="text-teal-600">5 a 14 anos</span>, de gêneros <span class="text-teal-600">masculino e feminino</span>!
                 </p>
+                
                 <p class="text-lg text-gray-700 font-semibold border-l-4 border-indigo-500 pl-3 py-1 bg-indigo-50/50 rounded">
                     Estamos localizados estrategicamente em <span class="text-indigo-600">Lagoa Nova</span>, prontos para receber atletas de todas as idades.
                 </p>
+                
+                <!-- BLOCO DE IMAGENS --><div class="grid grid-cols-2 gap-4 pt-4">
+                    <img 
+                        src="https://imgs.search.brave.com/w2XYo4DGbO7kRT2aPcSyjPKTFm-O5HvZmETJUnWsROY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zMy5h/bWF6b25hd3MuY29t/L2Jsb2cuZGVudHJv/ZGFoaXN0b3JpYS5j/b20uYnIvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTgvMDYvMjEw/OTI3MTEvZnV0ZWJv/bC0xLTEwMjR4NTc2/LmpwZw" 
+                        alt="Detalhe de uma bola de futebol no campo" 
+                        class="rounded-xl shadow-lg w-full h-auto object-cover"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x225/A5B4FC/ffffff?text=Imagem+de+Campo+1'"
+                    >
+                    <img 
+                        src="https://imgs.search.brave.com/ZZIDMcPTce-OHuYfw3dmWI31j5YVYabpaRneGlEp6Tg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI1/NzgwNjQzOC9wdC9m/b3RvL3N1bW1lci1z/b2NjZXItZm9vdGJh/bGwtY2FtcC1zY2hv/b2wtZm9yLWNoaWxk/cmVuLXRyYWluaW5n/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz15d2pfLUNIRUtN/NlpuTkU1SDVBb0VU/SFVzamFGQWxmSlE2/dkMwRktoY3pzPQ" 
+                        alt="Crianças treinando em um campo de futebol" 
+                        class="rounded-xl shadow-lg w-full h-auto object-cover"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x225/A5B4FC/ffffff?text=Imagem+de+Treino+2'"
+                    >
+                </div>
+                <!-- FIM BLOCO DE IMAGENS -->
             </div>
             
-            <!-- Bloco de Endereço e Horários E MAPA ATUALIZADO -->
-            <div class="bg-gray-100 p-6 rounded-xl shadow-xl">
+            <!-- Bloco de Endereço e Horários E MAPA --><div class="bg-gray-100 p-6 rounded-xl shadow-xl">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-3">Localização e Horários</h3>
                 
                 <p class="text-gray-700 mb-4">
                     <span class="font-bold text-lg">Endereço:</span> Rua São José, 1815, Lagoa Nova, Natal/RN.
                 </p>
                 
-                <!-- MAPA EMBUTIDO -->
-                <div class="mb-5 overflow-hidden rounded-lg shadow-md aspect-w-16 aspect-h-9">
+                <!-- MAPA EMBUTIDO --><div class="mb-5 overflow-hidden rounded-lg shadow-md aspect-w-16 aspect-h-9">
                     <iframe 
                         src="https://maps.google.com/maps?q=Rua%20S%C3%A3o%20Jos%C3%A9%2C%201815%2C%20Lagoa%20Nova%2C%20Natal%2FRN&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                         width="100%" 
@@ -87,9 +107,7 @@
                         title="Localização da Escolinha de Futebol São José"
                     ></iframe>
                 </div>
-                <!-- FIM MAPA EMBUTIDO -->
-
-                <h4 class="text-xl font-bold text-indigo-700 mb-2">Grade de Treinos</h4>
+                <!-- FIM MAPA EMBUTIDO --><h4 class="text-xl font-bold text-indigo-700 mb-2">Grade de Treinos</h4>
                 <div class="space-y-2 text-gray-700 text-base">
                     <p><span class="font-semibold text-teal-600">Manhã:</span> Terças e Quintas - 8:00 às 9:30</p>
                     <p><span class="font-semibold text-teal-600">Tarde (Terça):</span> 17:00 às 18:30</p>
@@ -103,8 +121,7 @@
         </div>
     </section>
 
-    <!-- Seção de Preços ATUALIZADA -->
-    <section id="precos" class="py-16 px-4 sm:px-6 lg:px-8 bg-indigo-50/70">
+    <!-- Seção de Preços --><section id="precos" class="py-16 px-4 sm:px-6 lg:px-8 bg-indigo-50/70">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
                 Nossos Planos de Acesso
@@ -112,41 +129,34 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-                <!-- Cartão 1: Taxa de Inscrição (Matrícula) -->
-                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-indigo-600 text-center transform hover:scale-105 transition duration-300">
+                <!-- Cartão 1: Taxa de Inscrição (Matrícula) --><div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-indigo-600 text-center transform hover:scale-105 transition duration-300">
                     <h3 class="text-2xl font-bold text-indigo-600 mb-2">Taxa de Inscrição</h3>
                     <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 130<span class="text-xl font-normal">,00</span></p>
                     <p class="text-sm text-gray-500 mb-4">Pagamento único para efetivação da matrícula.</p>
-                    <!-- Botão WhatsApp: MATRÍCULA -->
-                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20matr%C3%ADcula%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700">
+                    <!-- Botão WhatsApp: MATRÍCULA --><a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20matr%C3%ADcula%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700">
                         Matricular Agora
                     </a>
                 </div>
 
-                <!-- Cartão 2: Mensalidade (Alterado para enfatizar 'após 30 dias') -->
-                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-teal-600 text-center transform hover:scale-105 transition duration-300">
+                <!-- Cartão 2: Mensalidade --><div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-teal-600 text-center transform hover:scale-105 transition duration-300">
                     <h3 class="text-2xl font-bold text-teal-600 mb-2">Mensalidade</h3>
                     <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 130<span class="text-xl font-normal">,00</span></p>
                     <p class="text-sm text-gray-500 mb-4">Valor pago mensalmente pelas aulas **após os primeiros 30 dias**.</p>
-                    <!-- Botão WhatsApp: MENSALIDADE -->
-                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20iniciar%20o%20pagamento%20da%20mensalidade%20de%20R%24%20130%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-700">
+                    <!-- Botão WhatsApp: MENSALIDADE --><a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20iniciar%20o%20pagamento%20da%20mensalidade%20de%20R%24%20130%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-700">
                         Pagar Mensalidade
                     </a>
                 </div>
                 
-                <!-- Cartão 3: Aula Avulsa -->
-                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-yellow-500 text-center transform hover:scale-105 transition duration-300">
+                <!-- Cartão 3: Aula Avulsa --><div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-yellow-500 text-center transform hover:scale-105 transition duration-300">
                     <h3 class="text-2xl font-bold text-yellow-600 mb-2">Aula Avulsa</h3>
                     <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 40<span class="text-xl font-normal">,00</span></p>
                     <p class="text-sm text-gray-500 mb-4">Ideal para experimentação ou aulas esporádicas.</p>
-                    <!-- Botão WhatsApp: AULA AVULSA -->
-                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20avulsa%20experimental%20de%20R%24%2040%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-yellow-500 text-gray-900 py-2 rounded-lg font-semibold hover:bg-yellow-600">
+                    <!-- Botão WhatsApp: AULA AVULSA --><a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20avulsa%20experimental%20de%20R%24%2040%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-yellow-500 text-gray-900 py-2 rounded-lg font-semibold hover:bg-yellow-600">
                         Agendar Aula
                     </a>
                 </div>
 
-                <!-- Cartão 4: Fardamento (Atualizado para preço fixo sem a lista de itens) -->
-                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-red-500 text-center transform hover:scale-105 transition duration-300">
+                <!-- Cartão 4: Fardamento --><div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-red-500 text-center transform hover:scale-105 transition duration-300">
                     <h3 class="text-2xl font-bold text-red-600 mb-2">Fardamento Oficial</h3>
                     <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 150<span class="text-xl font-normal">,00</span></p>
                     <p class="text-sm text-gray-500 mb-4">Preço fixo do kit (camiseta, calção e meião).</p>
@@ -162,8 +172,7 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8 mt-12">
+    <!-- Rodapé --><footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8 mt-12">
         <div class="max-w-7xl mx-auto text-center">
             <p class="text-lg font-semibold mb-2">Escolinha de Futebol São José</p>
             <p class="text-sm">Localização: Rua São José, 1815, Lagoa Nova, Natal/RN.</p>
