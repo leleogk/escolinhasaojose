@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolinha de Futebol São José - Lagoa Nova</title>
+    <!-- Carregamento do Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .hero-bg {
+            background-color: #0d9488; /* Teal 600 - Um verde/azul forte */
+            background-image: linear-gradient(135deg, #0d9488 0%, #1d4ed8 100%); /* Transição de cor */
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho / Seção Hero -->
+    <header class="hero-bg text-white shadow-xl">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center rounded-b-lg">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-3 text-shadow">
+                Escolinha de Futebol São José
+            </h1>
+            <p class="text-xl md:text-2xl font-semibold mb-6">
+                Onde os sonhos de Lagoa Nova viram realidade no campo!
+            </p>
+            
+            <!-- Botões de Ação: Planos e Instagram -->
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#precos" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Ver Planos e Inscrever
+                </a>
+                <!-- Botão Instagram com ícone SVG -->
+                <a href="https://www.instagram.com/prof.lourivall/" target="_blank" class="inline-flex items-center justify-center bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    Nosso Instagram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre, Localização e Horários -->
+    <section id="sobre" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-10">
+            Venha Treinar Conosco
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="space-y-4">
+                <p class="text-lg text-gray-700">
+                    A Escolinha de Futebol São José está comprometida em desenvolver jovens talentos com disciplina, respeito e paixão pelo esporte. Nosso foco é no aprimoramento técnico e tático, garantindo que cada aluno alcance seu potencial máximo.
+                </p>
+                <!-- INFORMAÇÃO DE IDADE ADICIONADA -->
+                <p class="text-lg text-gray-800 font-bold border-l-4 border-teal-500 pl-3 py-1 bg-teal-50/50 rounded">
+                    Recebemos atletas de <span class="text-teal-600">5 a 13 anos</span>. Acima desta idade, avaliamos o grau de aprendizado e desenvolvimento do atleta.
+                </p>
+                <p class="text-lg text-gray-700 font-semibold border-l-4 border-indigo-500 pl-3 py-1 bg-indigo-50/50 rounded">
+                    Estamos localizados estrategicamente em <span class="text-indigo-600">Lagoa Nova</span>, prontos para receber atletas de todas as idades.
+                </p>
+            </div>
+            
+            <!-- Bloco de Endereço e Horários E MAPA ATUALIZADO -->
+            <div class="bg-gray-100 p-6 rounded-xl shadow-xl">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Localização e Horários</h3>
+                
+                <p class="text-gray-700 mb-4">
+                    <span class="font-bold text-lg">Endereço:</span> Rua São José, 1815, Lagoa Nova, Natal/RN.
+                </p>
+                
+                <!-- MAPA EMBUTIDO -->
+                <div class="mb-5 overflow-hidden rounded-lg shadow-md aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Rua%20S%C3%A3o%20Jos%C3%A9%2C%201815%2C%20Lagoa%20Nova%2C%20Natal%2FRN&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="rounded-lg"
+                        title="Localização da Escolinha de Futebol São José"
+                    ></iframe>
+                </div>
+                <!-- FIM MAPA EMBUTIDO -->
+
+                <h4 class="text-xl font-bold text-indigo-700 mb-2">Grade de Treinos</h4>
+                <div class="space-y-2 text-gray-700 text-base">
+                    <p><span class="font-semibold text-teal-600">Manhã:</span> Terças e Quintas - 8:00 às 9:30</p>
+                    <p><span class="font-semibold text-teal-600">Tarde (Terça):</span> 17:00 às 18:30</p>
+                    <p><span class="font-semibold text-teal-600">Tarde (Quinta):</span> 16:30 às 17:30</p>
+                </div>
+                
+                <p class="text-gray-700 mt-4">
+                    <span class="font-bold">WhatsApp Contato:</span> +55 84 8731-0194
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preços ATUALIZADA -->
+    <section id="precos" class="py-16 px-4 sm:px-6 lg:px-8 bg-indigo-50/70">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+                Nossos Planos de Acesso
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Cartão 1: Taxa de Inscrição (Matrícula) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-indigo-600 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">Taxa de Inscrição</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 130<span class="text-xl font-normal">,00</span></p>
+                    <p class="text-sm text-gray-500 mb-4">Pagamento único para efetivação da matrícula.</p>
+                    <!-- Botão WhatsApp: MATRÍCULA -->
+                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20matr%C3%ADcula%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700">
+                        Matricular Agora
+                    </a>
+                </div>
+
+                <!-- Cartão 2: Mensalidade (Alterado para enfatizar 'após 30 dias') -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-teal-600 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-2">Mensalidade</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 130<span class="text-xl font-normal">,00</span></p>
+                    <p class="text-sm text-gray-500 mb-4">Valor pago mensalmente pelas aulas **após os primeiros 30 dias**.</p>
+                    <!-- Botão WhatsApp: MENSALIDADE -->
+                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20iniciar%20o%20pagamento%20da%20mensalidade%20de%20R%24%20130%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-700">
+                        Pagar Mensalidade
+                    </a>
+                </div>
+                
+                <!-- Cartão 3: Aula Avulsa -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-yellow-500 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-2">Aula Avulsa</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 40<span class="text-xl font-normal">,00</span></p>
+                    <p class="text-sm text-gray-500 mb-4">Ideal para experimentação ou aulas esporádicas.</p>
+                    <!-- Botão WhatsApp: AULA AVULSA -->
+                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20avulsa%20experimental%20de%20R%24%2040%2C00%20na%20Escolinha%20de%20Futebol%20S%C3%A3o%20Jos%C3%A9." target="_blank" class="block bg-yellow-500 text-gray-900 py-2 rounded-lg font-semibold hover:bg-yellow-600">
+                        Agendar Aula
+                    </a>
+                </div>
+
+                <!-- Cartão 4: Fardamento (Atualizado para preço fixo sem a lista de itens) -->
+                <div class="bg-white p-6 rounded-xl shadow-2xl border-t-8 border-red-500 text-center transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">Fardamento Oficial</h3>
+                    <p class="text-4xl font-extrabold text-gray-900 mb-4">R$ 150<span class="text-xl font-normal">,00</span></p>
+                    <p class="text-sm text-gray-500 mb-4">Preço fixo do kit (camiseta, calção e meião).</p>
+                    <a href="https://wa.me/558487310194?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20o%20kit%20de%20fardamento%20oficial%20da%20Escolinha%20S%C3%A3o%20Jos%C3%A9%20(R%24150%2C00)." target="_blank" class="block bg-red-500 text-white py-2 rounded-lg font-semibold hover:bg-red-700">
+                        Adquirir Fardamento
+                    </a>
+                </div>
+            </div>
+            
+            <p class="text-center text-gray-600 mt-12 text-lg">
+                <span class="font-semibold text-teal-600">Importante:</span> A mensalidade de R$ 130,00 começa a ser cobrada após os primeiros 30 dias de treino. O Fardamento é obrigatório e tem preço fixo de R$ 150,00.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8 mt-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-lg font-semibold mb-2">Escolinha de Futebol São José</p>
+            <p class="text-sm">Localização: Rua São José, 1815, Lagoa Nova, Natal/RN.</p>
+            <p class="text-xs mt-4 opacity-70">
+                Entre em contato pelo WhatsApp: +55 84 8731-0194
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
